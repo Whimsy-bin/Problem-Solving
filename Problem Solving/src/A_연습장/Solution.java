@@ -7,7 +7,7 @@ import java.util.StringTokenizer;
 
 public class Solution { 
 	
-	// 문제 설명 fix you
+	// 문제 설명 fix you fix you2
 	
 	public static void main(String[] args) throws IOException {
 		
