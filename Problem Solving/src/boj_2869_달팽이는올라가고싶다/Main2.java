@@ -26,14 +26,14 @@ public class Main2 {
 
 		// 며칠이 걸리는지는 전체 거리를 올라가는 거리로 나누어주면 쉽게 알 수 있다.
 		// 여기서 미끄러는 횟수는 항상 올라가는 횟수보다 1회 적으므로 전체 거리는 V에서 B를 한 번 빼주어야 한다.
-		int date = (V-B)/ (A-B);
-		
+		int date = (V - B) / (A - B);
+
 		// 그러나 딱 나누어떨어지지 않았을 경우는, 다음 날 올라가야할 조금의 거리가 더 남아있었다는 뜻이므로 date에 1을 더해준다.
-		if ((V-B)%(A-B)!=0){
-			date ++;
+		if ((V - B) % (A - B) != 0) {
+			date++;
 		}
 		System.out.println(date);
 		br.close();
-		
+
 	} // main
 } // class

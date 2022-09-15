@@ -15,16 +15,19 @@ public class Main {
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int N = Integer.parseInt(br.readLine());
+
+		// 하나씩 한 방향으로 붙인 직사각형은 항상 만들 수 있으므로, 반드시 N개 이상이다.
 		int ans = N;
 
 		for (int i = 2; i <= 100; i++) {
 			if (N < Math.pow(i, 2))
 				break;
+			// N의 제곱보다 크면 이후로는 N번째마다 하나씩 더 추가해줘야 한다.
 			else
 				ans += (N / i) - i + 1;
 		}
 
 		System.out.println(ans);
-		
+
 	} // main
 } // class

@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 public class Main {
 
 //	알파벳 대소문자로 된 단어가 주어지면, 이 단어에서 가장 많이 사용된 알파벳이 무엇인지 알아내는 프로그램을 작성하시오. 단, 대문자와 소문자를 구분하지 않는다.
-//tet
+
 	public static void main(String[] args) throws IOException {
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -17,7 +17,6 @@ public class Main {
 		// 알파벳 개수(26)만큼 크기의 배열을 만들어준다. 값을 할당해주지 않았으니 모든 배열의 값은 0으로 저장되어 있다.
 		// 0은 A를, 1은 B를, 2는 C를 ... 26은 Z와 일대일 대응한다.
 		int[] cnt = new int[26];
-//		test  dfdf
 
 		// 목표 : 단어에 있는 철자와 일치하는 idx의 값을 하나씩 늘려준다.
 		for (int i = 0; i < word.length(); i++) {

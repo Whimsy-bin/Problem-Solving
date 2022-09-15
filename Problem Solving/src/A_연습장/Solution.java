@@ -5,9 +5,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Solution { 
+public class Solution {
 	
-	// 문제 설명 fix you fix you2
+	// 문제 설명
 	
 	public static void main(String[] args) throws IOException {
 		
